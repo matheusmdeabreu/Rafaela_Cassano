@@ -33,12 +33,23 @@
         </div>
     </header>
 
-    <!-- Seção Hero com Slideshow -->
+    <!-- Seção Hero com Carrossel de Fundo -->
     <section class="hero" id="inicio">
-        <div class="slideshow-container">
-            <div class="slideshow-slide active" style="background-image: url('img/celebration-min.webp');"></div>
-            <div class="slideshow-slide" style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');"></div>
-            <div class="slideshow-slide" style="background-image: url('img/vitor-monthay-3u0zm4eri68-unsplash-min.webp');"></div>
+        <div class="hero-carousel">
+            <div class="slide active">
+                <img src="img/1-min.webp" alt="Evento 1" class="hero-slide-img" loading="eager" fetchpriority="high">
+            </div>
+            <div class="slide">
+                <img src="img/2-min.webp" alt="Evento 2" class="hero-slide-img" loading="lazy" fetchpriority="low">
+            </div>
+            <div class="slide">
+                <img src="img/3-min.webp" alt="Evento 3" class="hero-slide-img" loading="lazy" fetchpriority="low">
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
         </div>
         <div class="hero-overlay"></div>
         <div class="container">
@@ -61,7 +72,7 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-image">
-                    <img src="img/Rafaela-Cassano.webp" alt="Rafaela Cassano - Produtora de Eventos" class="about-img">
+                    <img src="img/Rafaela-Cassano.webp" alt="Rafaela Cassano - Produtora de Eventos" class="about-img" loading="lazy">
                 </div>
                 <div class="about-text" style="text-align: left;">
                     <span class="section-subtitle" style="text-align: left; display: block;">A mente criativa por trás de cada detalhe</span>
@@ -113,7 +124,7 @@
                 <!-- Card Casamentos -->
                 <div class="evento-card">
                     <div class="evento-image">
-                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Casamentos">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Casamentos" loading="lazy">
                         <div class="evento-overlay"></div>
                         <h3 class="evento-card-title">Casamentos</h3>
                     </div>
@@ -125,7 +136,7 @@
                 <!-- Card Aniversários -->
                 <div class="evento-card">
                     <div class="evento-image">
-                        <img src="img/andrea-mininni-VLlkOJdzLG0-unsplash-min.webp" alt="Aniversários">
+                        <img src="img/andrea-mininni-VLlkOJdzLG0-unsplash-min.webp" alt="Aniversários" loading="lazy">
                         <div class="evento-overlay"></div>
                         <h3 class="evento-card-title">Aniversários</h3>
                     </div>
@@ -137,7 +148,7 @@
                 <!-- Card Eventos Corporativos -->
                 <div class="evento-card">
                     <div class="evento-image">
-                        <img src="img/elena-de-soto-w423NnHFjFg-unsplash.webp" alt="Eventos Corporativos">
+                        <img src="img/elena-de-soto-w423NnHFjFg-unsplash.webp" alt="Eventos Corporativos" loading="lazy">
                         <div class="evento-overlay"></div>
                         <h3 class="evento-card-title">Eventos Corporativos</h3>
                     </div>
@@ -296,5 +307,6 @@
     </footer>
     
     <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 </html>
